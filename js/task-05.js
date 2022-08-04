@@ -3,11 +3,11 @@ const refs = {
   span: document.querySelector('#name-output'),
 };
 
-function onInputChange(event) {
-  if (event.currentTarget.value === '') {
+function onInputChange(evt) {
+  if (evt.currentTarget.value === '') {
     refs.span.textContent = 'Anonymous';
   } else {
-    refs.span.textContent = event.currentTarget.value;
+    refs.span.textContent = evt.currentTarget.value;
   }
 }
 
